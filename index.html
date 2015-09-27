@@ -1,1 +1,20 @@
-hello
+<!DOCTYPE html>
+<html>
+  <head>
+    <base src="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Morseroom</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/xtyle.min.css">
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </head>
+  <body ng-app="MorseWeb">
+    <div ui-view></div>
+  </body>
+</html>
