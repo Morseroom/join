@@ -1,0 +1,17 @@
+<i ng-click="exit()" class="icon-cancel padding display-block position-fixed" style="right: 0; font-size: 150%; width:30px;"></i>
+<ul id="users" style="position: absolute; right: 20px;" class="display-none">
+  <li><b>Users:</b></li>
+  <li ng-repeat="user in users">{{user}}</li>
+</ul>
+<ul id="messages" class="reset">
+  <li ng-repeat="message in messages|limitTo:-25" class="border-bottom padding">
+  <span ng-show="message.time" style="text-transform: capitalize;" ng-class="message.username === currentuser ? 'blue color':'silver color'">{{message.username}}: </span>
+  <span ng-bind-html="message.msg|isImage"></span>
+  <br>
+  <small ng-show="message.time">{{message.time}}</small>
+  </li>
+</ul>
+<form action="">
+  <input id="m" autocomplete="off">
+  <button>Send</button>
+</form>
